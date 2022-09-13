@@ -69,7 +69,7 @@ def get_highlights(email, password):
         book.click()
 
         # wait for page to load
-        elem = WebDriverWait(driver, 45).until(
+        elem = WebDriverWait(driver, 245).until(
         EC.presence_of_element_located((By.XPATH, "//span[contains(@id, 'highlight')]")) 
         )
 
